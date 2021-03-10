@@ -1,0 +1,56 @@
+.item-wrapper {
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background-color: azure;
+    padding: 10px;
+
+    .item-name {
+        font-weight: 600;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            display: none;
+        }
+    }
+
+    .item-name:hover {
+        img {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .action-button {
+            width: 22px;
+            height: 22px;
+            border: 1px solid grey;
+            border-radius: 11px;
+            text-align: center;
+            background-color: grey;
+            color: white;
+            font-weight: 1000;
+            cursor: pointer;
+        }
+        
+        .action-button:hover {
+            color: black;
+            background-color: lightgrey;
+        }
+
+        .amount {
+            font-weight: 800;
+            color: black;
+            margin: 0 10px;
+        }
+    }
+}

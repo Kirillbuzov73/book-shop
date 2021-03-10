@@ -1,0 +1,9 @@
+<div class="book-wrapper">
+    <div class="book-name">{{name | uppercase}}</div>
+    <div class="book-category">{{category}}</div>
+    <div class="book-description">{{description || '&lt;empty&gt;'}}</div>
+    <div class="book-date">{{createDate | date:'longDate'}}</div>
+    <div class="book-price">{{price}}$</div>
+    <button class="button-buy" [disabled]="!isAvailable" (click)="onBuy()">BUY</button>
+    <div *ngIf="!isAvailable" class="book-availability">(unavailable)</div>
+</div>

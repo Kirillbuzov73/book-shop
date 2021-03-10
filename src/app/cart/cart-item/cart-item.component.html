@@ -1,0 +1,8 @@
+<div class="item-wrapper">
+    <div class="item-name">{{item.name}}<img (click)="onDelete()" src="/assets/trash.svg" /></div>
+    <div class="buttons-wrapper">
+        <span (click)="onSubtract()" class="action-button">–</span>
+        <div class="amount">{{amount}}</div>
+        <span (click)="onAdd()" class="action-button">+</span>
+    </div>
+</div>

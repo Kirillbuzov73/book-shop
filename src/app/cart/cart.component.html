@@ -1,0 +1,3 @@
+<app-cart-item (add)="onAdd($event)" (subtract)="onSubtract($event)" (delete)="onDelete($event)"
+    [amount]="purchasesTable[purchase.name]" [item]="purchase" *ngFor="let purchase of uniquePurchases">
+</app-cart-item>
