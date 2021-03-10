@@ -1,0 +1,59 @@
+.book-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    border: 1px solid blue;
+    background-color: azure;
+    border-radius: 10px;
+
+    div, .button-buy {
+        padding: 10px;
+    }
+
+    .book-name {
+        font-size: 24px;
+        font-weight: 800;
+        color: blue;
+    }
+
+    .book-category {
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: green;
+    }
+
+    .book-description {
+        font-size: 20px;
+        font-weight: 400;
+        color: blue;
+    }
+
+    .book-date {
+        font-size: 22px;
+        font-weight: 600;
+        color: black;
+    }
+
+    .book-price {
+        font-size: 24px;
+        font-weight: 800;
+        color: red;
+    }
+
+    .button-buy {
+        font-size: 24px;
+        font-weight: 800;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+
+    .book-availability {
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+    }
+}
