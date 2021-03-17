@@ -1,3 +1,7 @@
-<app-cart-item (add)="onAdd($event)" (subtract)="onSubtract($event)" (delete)="onDelete($event)"
-    [amount]="purchasesTable[purchase.name]" [item]="purchase" *ngFor="let purchase of uniquePurchases">
-</app-cart-item>
+<div *ngIf="totalQuantity" class="cart-content">
+    <app-cart-item (add)="onAdd($event)" (subtract)="onSubtract($event)" (delete)="onDelete($event)"
+        [amount]="purchasesTable[purchase.name]" [item]="purchase" *ngFor="let purchase of uniquePurchases">
+    </app-cart-item>
+    <div>Total purchases:&nbsp;{{totalQuantity}}</div>
+    <div>Total sum:&nbsp;{{totalSum}}</div>
+</div>

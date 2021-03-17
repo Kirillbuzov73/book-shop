@@ -1,0 +1,5 @@
+<div class="books-list">
+    <app-book (buy)="onBuy($event)" [name]="book.name" [description]="book.description" [price]="book.price"
+        [category]="book.category" [createDate]="book.createDate" [isAvailable]="book.isAvailable"
+        *ngFor="let book of books"></app-book>
+</div>

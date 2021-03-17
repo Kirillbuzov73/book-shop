@@ -1,9 +1,5 @@
 <h1 class="header" #appTitle></h1>
 <div class="content">
-  <div class="books-list">
-    <app-book (buy)="onBuy($event)" [name]="book.name" [description]="book.description" [price]="book.price"
-      [category]="book.category" [createDate]="book.createDate" [isAvailable]="book.isAvailable"
-      *ngFor="let book of books"></app-book>
-  </div>
-  <app-cart *ngIf="purchasedBook" [purchase]="purchasedBook"></app-cart>
+  <app-books-list></app-books-list>
+  <app-cart></app-cart>
 </div>

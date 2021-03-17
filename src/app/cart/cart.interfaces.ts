@@ -1,7 +1,3 @@
-export interface Purchase {
-
-}
-
-export interface CartItemArray {
-
+export interface CartTable {
+    [name: string]: number;
 }
